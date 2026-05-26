@@ -62,17 +62,3 @@ Bundle and optimize all CSS, JS, HTML, and assets into the `/dist` directory for
 npm run build
 ```
 
----
-
-## ⚡ Deployment to Vercel
-
-This repository is pre-configured and fully optimized to deploy on **Vercel** with one click.
-
-### Deployment steps:
-1. Push your local files to a **GitHub**, GitLab, or Bitbucket repository.
-2. Sign in to your [Vercel Dashboard](https://vercel.com/) and click **Add New** > **Project**.
-3. Import your project repository.
-4. Vercel will automatically detect the **Vite** framework preset:
-   - **Build Command**: `npm run build` (runs `vite build`)
-   - **Output Directory**: `dist`
-5. Click **Deploy**. Vercel will build and deploy your secure NGO site within seconds.
