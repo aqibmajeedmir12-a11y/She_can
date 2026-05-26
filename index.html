@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- SEO -->
+    <title>She Can Foundation — Education & Empowerment for Women</title>
+    <meta name="description" content="She Can Foundation is a registered non-profit working to bridge the opportunity gap for female students through skill training, mentorship programs, and community-driven campaigns across India." />
+    <meta name="keywords" content="She Can Foundation, NGO, women empowerment, student education, skill development, volunteer, career mentorship, India" />
+    <meta name="author" content="She Can Foundation" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="She Can Foundation — Education & Empowerment" />
+    <meta property="og:description" content="Bridging the opportunity gap for female students through skill training, mentorship, and community campaigns." />
+    <meta property="og:image" content="/images/foundation_hero.png" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/about_img.png" />
+  </head>
+  <body>
+    <!-- ================================================================
+         HEADER — Fixed glassmorphism navbar
+         ================================================================ -->
+    <header class="header" id="header" role="banner">
+      <div class="container nav-wrap">
+        <a href="#home" class="logo" aria-label="She Can Foundation Home">
+          <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+          <span class="logo-text">She<span class="logo-highlight">Can</span></span>
+        </a>
+
+        <nav class="nav" id="nav-menu" role="navigation" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#programs" class="nav-link">Programs</a></li>
+            <li><a href="#journey" class="nav-link">Our Journey</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#stories" class="nav-link">Stories</a></li>
+            <li><a href="#join" class="nav-link">Get Involved</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a href="#join" class="btn btn-sm">Join Us</a>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================================================================
+         MAIN CONTENT
+         ================================================================ -->
+    <main role="main">
+
+      <!-- HERO -->
+      <section id="home" class="hero" style="background-image: linear-gradient(160deg, rgba(10,6,18,0.78) 0%, rgba(10,6,18,0.88) 100%), url('/images/foundation_hero.png');">
+        <div class="container hero-inner">
+          <span class="hero-title-brand anim">She Can Foundation</span>
+          <span class="hero-badge anim anim-d1"><i class="fa-solid fa-shield-heart"></i> Registered Non-Profit · Est. 2023</span>
+          <h1 class="hero-heading anim anim-d2">
+            Empowering Students &amp; Women<br />For A Better Tomorrow
+          </h1>
+          <p class="hero-desc anim anim-d3">
+            At She Can Foundation, we work with female students and underserved youth across India — delivering structured skill training, professional mentorship, and community-led awareness campaigns that open doors to real careers.
+          </p>
+          <div class="hero-cta anim anim-d4">
+            <a href="#join" class="btn btn-primary">Become a Volunteer <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#about" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container grid-2 align-center">
+          <div class="anim anim-left">
+            <div class="about-img-wrap">
+              <img src="/images/about_img.png" alt="She Can Foundation team conducting a workshop for female students" class="about-img" loading="lazy" />
+              <div class="about-badge card">
+                <i class="fa-solid fa-shield-heart"></i>
+                <div>
+                  <strong>Verified NGO</strong>
+                  <span>80G Registered</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="anim anim-right">
+            <span class="label">Who We Are</span>
+            <h2 class="heading">Bridging the Opportunity Gap</h2>
+            <p>She Can Foundation is a registered non-profit based in Kolkata, West Bengal. We assist female students and underprivileged youth in gaining digital literacy, professional vocational training, and career counseling to build sustainable livelihoods.</p>
+            <p>Through structured field campaigns, we foster self-reliance, community leadership, and equitable access — ensuring every aspiring woman can enter the professional world with confidence.</p>
+            <div class="stats-row">
+              <div class="stat card">
+                <strong class="stat-num" data-target="500">0</strong><span class="stat-suffix">+</span>
+                <span class="stat-label">Active Volunteers</span>
+              </div>
+              <div class="stat card">
+                <strong class="stat-num" data-target="1000">0</strong><span class="stat-suffix">+</span>
+                <span class="stat-label">Students Mentored</span>
+              </div>
+              <div class="stat card">
+                <strong class="stat-num" data-target="50">0</strong><span class="stat-suffix">+</span>
+                <span class="stat-label">Drives Completed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROGRAMS -->
+      <section id="programs" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <span class="label">What We Do</span>
+            <h2 class="heading">Core Programs</h2>
+            <p>Targeted initiatives addressing education, employment, and empowerment for women and youth.</p>
+          </div>
+          <div class="grid-3">
+            <div class="program-card card anim anim-d1">
+              <div class="program-icon bg-violet"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h3>Education Support</h3>
+              <p>Direct scholarships, textbooks, and after-school tutoring for secondary-level female students in underfunded districts.</p>
+            </div>
+            <div class="program-card card anim anim-d2">
+              <div class="program-icon bg-pink"><i class="fa-solid fa-venus"></i></div>
+              <h3>Women Empowerment</h3>
+              <p>Structured workshops on gender equity, self-defense, reproductive health, and local leadership advocacy.</p>
+            </div>
+            <div class="program-card card anim anim-d3">
+              <div class="program-icon bg-blue"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3>Skill Development</h3>
+              <p>Hands-on bootcamps covering basic programming, digital tools, professional communication, and office IT.</p>
+            </div>
+            <div class="program-card card anim anim-d4">
+              <div class="program-icon bg-violet"><i class="fa-solid fa-users"></i></div>
+              <h3>Community Circles</h3>
+              <p>Safe peer-learning spaces where adolescent girls network, collaborate, and access shared educational resources.</p>
+            </div>
+            <div class="program-card card anim anim-d5">
+              <div class="program-icon bg-pink"><i class="fa-solid fa-compass"></i></div>
+              <h3>Career Mentorship</h3>
+              <p>Connecting university students with working professionals in technology, management, and arts for guided career planning.</p>
+            </div>
+            <div class="program-card card anim anim-d6">
+              <div class="program-icon bg-blue"><i class="fa-solid fa-brain"></i></div>
+              <h3>Mental Health Advocacy</h3>
+              <p>Counseling access, emotional resilience workshops, and stress management programs for students and volunteers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- JOURNEY / TIMELINE -->
+      <section id="journey" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="label">Our Journey</span>
+            <h2 class="heading">Milestones</h2>
+            <p>From a local initiative to a state-recognized foundation serving hundreds of women.</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-track"></div>
+            <div class="tl-item tl-left anim anim-left">
+              <div class="tl-dot"></div>
+              <div class="tl-content card">
+                <span class="tl-year">2023</span>
+                <h3>Foundation Launch</h3>
+                <p>Registered in Kolkata. Launched initial tutorial drives reaching 50 girls in nearby communities.</p>
+              </div>
+            </div>
+            <div class="tl-item tl-right anim anim-right">
+              <div class="tl-dot"></div>
+              <div class="tl-content card">
+                <span class="tl-year">2024</span>
+                <h3>Digital Skill Labs</h3>
+                <p>Opened our first computing facility. Enabled IT certifications for 200+ women, with 40 securing tech internships.</p>
+              </div>
+            </div>
+            <div class="tl-item tl-left anim anim-left">
+              <div class="tl-dot"></div>
+              <div class="tl-content card">
+                <span class="tl-year">2025</span>
+                <h3>Campus Partnerships</h3>
+                <p>Partnered with 10 state colleges for mentorship structures. Volunteer network crossed 300 active members.</p>
+              </div>
+            </div>
+            <div class="tl-item tl-right anim anim-right">
+              <div class="tl-dot"></div>
+              <div class="tl-content card">
+                <span class="tl-year">2026</span>
+                <h3>National Outreach</h3>
+                <p>Extending digital learning access to remote districts. Targeting 5,000+ students with specialized resources.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <span class="label">Gallery</span>
+            <h2 class="heading">Our Work in Action</h2>
+            <p>Snapshots from our classrooms, skill labs, volunteer meets, and community outreach programs.</p>
+          </div>
+          <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="education">Education</button>
+            <button class="filter-btn" data-filter="empowerment">Empowerment</button>
+            <button class="filter-btn" data-filter="volunteers">Volunteers</button>
+            <button class="filter-btn" data-filter="campaigns">Campaigns</button>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery-item education anim" data-src="/images/gallery_edu.png" data-title="Education Workshop" data-desc="Students receiving structured tutoring and study resources.">
+              <img src="/images/gallery_edu.png" alt="Female students in a classroom workshop session" loading="lazy" />
+              <div class="gallery-hover"><span>Education</span><h4>Classroom Workshop</h4></div>
+            </div>
+            <div class="gallery-item empowerment anim anim-d1" data-src="/images/gallery_empower.png" data-title="Tech Bootcamp" data-desc="Women acquiring programming and digital skills.">
+              <img src="/images/gallery_empower.png" alt="Women learning technology skills at a bootcamp" loading="lazy" />
+              <div class="gallery-hover"><span>Empowerment</span><h4>Digital Skills Lab</h4></div>
+            </div>
+            <div class="gallery-item volunteers anim anim-d2" data-src="/images/gallery_vol.png" data-title="Volunteer Network" data-desc="Our coordination team preparing for field campaigns.">
+              <img src="/images/gallery_vol.png" alt="Group of She Can Foundation volunteers" loading="lazy" />
+              <div class="gallery-hover"><span>Volunteers</span><h4>Volunteer Meet</h4></div>
+            </div>
+            <div class="gallery-item campaigns anim anim-d3" data-src="/images/gallery_drive.png" data-title="Outreach Campaign" data-desc="Community awareness program on education and health rights.">
+              <img src="/images/gallery_drive.png" alt="Foundation team conducting a community outreach event" loading="lazy" />
+              <div class="gallery-hover"><span>Campaigns</span><h4>Field Outreach</h4></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIGHTBOX -->
+      <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true" aria-label="Image viewer">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+        <div class="lightbox-body">
+          <img id="lb-img" src="" alt="Enlarged gallery photo" />
+          <div class="lightbox-info card">
+            <h4 id="lb-title"></h4>
+            <p id="lb-desc"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- STORIES / TESTIMONIALS -->
+      <section id="stories" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="label">Stories</span>
+            <h2 class="heading">Voices from Our Community</h2>
+            <p>Real experiences from students, volunteers, and beneficiaries of our programs.</p>
+          </div>
+          <div class="carousel-wrap">
+            <div class="carousel" id="carousel">
+              <div class="testimonial card">
+                <div class="t-quote"><i class="fa-solid fa-quote-right"></i></div>
+                <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Before joining the digital bootcamp, I had zero exposure to programming. The mentors supported me at every stage. Today, I work as a software support intern at a Kolkata-based startup."</p>
+                <div class="t-author">
+                  <div class="t-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                  <div><strong>Ayesha Rahman</strong><span>Program Graduate</span></div>
+                </div>
+              </div>
+              <div class="testimonial card">
+                <div class="t-quote"><i class="fa-solid fa-quote-right"></i></div>
+                <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Volunteering with She Can Foundation gave me the leadership experience I needed. Organizing community lab sessions and seeing young women build their first projects is incredibly fulfilling."</p>
+                <div class="t-author">
+                  <div class="t-avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+                  <div><strong>Vikram Malhotra</strong><span>Senior Volunteer</span></div>
+                </div>
+              </div>
+              <div class="testimonial card">
+                <div class="t-quote"><i class="fa-solid fa-quote-right"></i></div>
+                <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                <p>"The scholarship covered my engineering entrance exam fees when my family was in severe financial difficulty. Without She Can Foundation's support, I would have been forced to drop out."</p>
+                <div class="t-author">
+                  <div class="t-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+                  <div><strong>Priya Sharma</strong><span>Scholarship Recipient</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-nav">
+              <button class="c-btn" id="c-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+              <div class="c-dots" id="c-dots"></div>
+              <button class="c-btn" id="c-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- JOIN / VOLUNTEER FORM -->
+      <section id="join" class="section section-alt">
+        <div class="container grid-2 align-center gap-lg">
+          <div class="anim anim-left">
+            <span class="label">Get Involved</span>
+            <h2 class="heading">Join Our Volunteer Team</h2>
+            <p>Our programs succeed because of motivated students and professionals who give their time. Whether you can teach, coordinate, design, or manage campaigns — you make a real difference.</p>
+            <ul class="checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Earn volunteer certification and recommendation letters</li>
+              <li><i class="fa-solid fa-circle-check"></i> Build leadership experience through field workshops</li>
+              <li><i class="fa-solid fa-circle-check"></i> Support students who lack access to guidance</li>
+              <li><i class="fa-solid fa-circle-check"></i> Join a focused, professional volunteer network</li>
+            </ul>
+            <div class="info-card card">
+              <i class="fa-solid fa-circle-info"></i>
+              <p>Questions? Write to us at <strong>volunteer@shecanfoundation.org</strong></p>
+            </div>
+          </div>
+          <div class="anim anim-right">
+            <div class="form-card card">
+              <h3>Volunteer Application</h3>
+              <form id="vol-form" novalidate autocomplete="off">
+                <div class="field">
+                  <input type="text" id="f-name" class="input" placeholder=" " required maxlength="100" />
+                  <label for="f-name">Full Name</label>
+                  <span class="field-err" id="e-name"></span>
+                </div>
+                <div class="field">
+                  <input type="email" id="f-email" class="input" placeholder=" " required maxlength="254" />
+                  <label for="f-email">Email Address</label>
+                  <span class="field-err" id="e-email"></span>
+                </div>
+                <div class="field">
+                  <input type="text" id="f-college" class="input" placeholder=" " required maxlength="150" />
+                  <label for="f-college">College / University</label>
+                  <span class="field-err" id="e-college"></span>
+                </div>
+                <div class="field">
+                  <select id="f-skill" class="input select" required>
+                    <option value="" disabled selected hidden>Select Primary Skill</option>
+                    <option value="teaching">Teaching &amp; Tutoring</option>
+                    <option value="it">IT &amp; Software</option>
+                    <option value="content">Content &amp; Design</option>
+                    <option value="social">Social Media &amp; Advocacy</option>
+                    <option value="field">Field Campaign Management</option>
+                  </select>
+                  <span class="field-err" id="e-skill"></span>
+                </div>
+                <div class="field">
+                  <textarea id="f-reason" class="input" rows="3" placeholder=" " required maxlength="500"></textarea>
+                  <label for="f-reason">Why do you want to join?</label>
+                  <span class="field-err" id="e-reason"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full" id="vol-btn">
+                  <span>Submit Application</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUCCESS POPUP -->
+      <div id="popup" class="popup" role="dialog" aria-hidden="true">
+        <div class="popup-card card">
+          <div class="popup-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h3>Application Received</h3>
+          <p>Thank you for your interest. Our coordination desk will review your profile and get in touch shortly.</p>
+          <button id="popup-close" class="btn btn-primary">Got it</button>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="label">Contact</span>
+            <h2 class="heading">Reach Our Office</h2>
+            <p>Get in touch for inquiries, partnerships, or donation coordination.</p>
+          </div>
+          <div class="grid-2 gap-lg">
+            <div class="anim anim-left">
+              <h3>Connect Directly</h3>
+              <p class="contact-sub">Office hours: Mon – Fri, 9:30 AM – 5:30 PM IST</p>
+              <div class="contact-row">
+                <div class="contact-icon bg-violet"><i class="fa-solid fa-phone"></i></div>
+                <div><strong>Phone</strong><p>+91 98765 43210</p></div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon bg-pink"><i class="fa-solid fa-envelope"></i></div>
+                <div><strong>Email</strong><p>info@shecanfoundation.org</p></div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon bg-blue"><i class="fa-solid fa-location-dot"></i></div>
+                <div><strong>Address</strong><p>Level 4, Innovation Building, Sector V, Salt Lake, Kolkata 700091</p></div>
+              </div>
+              <div class="socials">
+                <strong>Follow Us</strong>
+                <div class="social-row">
+                  <a href="#" class="social-link" aria-label="Facebook" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" class="social-link" aria-label="Instagram" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" class="social-link" aria-label="Twitter" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" class="social-link" aria-label="LinkedIn" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="anim anim-right">
+              <div class="map-card card">
+                <div id="map" class="map"></div>
+                <div class="map-badge card">
+                  <i class="fa-solid fa-location-crosshairs"></i>
+                  <span>Head Office</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================================
+         FOOTER
+         ================================================================ -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo" aria-label="She Can Foundation Home">
+            <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span class="logo-text">She<span class="logo-highlight">Can</span></span>
+          </a>
+          <p>A registered non-profit promoting education equity, vocational training, and leadership development for female students and youth.</p>
+          <small>Reg. No: S00492815/WB</small>
+        </div>
+        <div class="footer-col">
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#journey">Our Journey</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="#join">Volunteer</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#stories">Stories</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Receive quarterly progress reports and campaign updates.</p>
+          <form id="nl-form" class="nl-form" autocomplete="off">
+            <input type="email" placeholder="Your email" required maxlength="254" />
+            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+          <span id="nl-status" class="nl-status"></span>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 She Can Foundation. All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart"></i> for social impact</p>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="btt" class="btt" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Leaflet (map only) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- App Script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
